@@ -40,7 +40,17 @@ app.post('/generate-product', async (req, res) => {
 
         console.log('Response from OPENAI API:', JSON.stringify(response, null, 2))
 
+        if (response && response.choices && response.choices.length > 0 && response.choices[0].message && response.choices[0].message.content) {
+            res.json(response.choices[0].message.content)
+        } else {
+            res.status(500).send('Unexpected response structure from OpenAI API.')
+        }
+
     } catch (error) {
         res.status(500).send('Error generating product name.')
     }
+})
+
+app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${port}`)
 })
