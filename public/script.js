@@ -2,7 +2,7 @@ document.getElementById('description-form').addEventListener('submit', async (ev
     event.preventDefault()
 
     const input = document.getElementById('description-input').value 
-    const resultList = document.getElementById(result-list)
+    const resultList = document.getElementById('result-list')
     resultList.innerHTML = ''
 
     try {
