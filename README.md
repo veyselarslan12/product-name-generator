@@ -12,7 +12,7 @@
 ## Usage
 * Start the server ```npm start```
 * Open your browser ```http://localhost:3001```
-* Generate questions 
+* Generate product names
 
 ## Dependencies
 * Express
