@@ -1,7 +1,7 @@
 # product-name-generator
 
 ## Description
-* This project is a simple web application that generates products name using the OpenAI API. The application allows users to input a prompt and receive a list of generated questions in response.
+* This project is a simple web application that generates products name using the OpenAI API. The application allows users to input a prompt and receive a list of generated product names.
 
 ## Installation
 * Clone the repository
